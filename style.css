@@ -23,8 +23,12 @@ body {
 
 .nav-container a {
   text-decoration: none;
-
   cursor: pointer;
+}
+
+.nav-container a:hover {
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
 }
 
 .nav-container ul {
@@ -69,13 +73,13 @@ li {
 .gmail,
 .images {
   font-size: 16px;
-  padding-left: 15px;
+  margin-left: 15px;
   color: #000;
   opacity: 0.75;
 }
 
 .images {
-  padding-right: 15px;
+  margin-right: 15px;
 }
 
 /* === start main form ===  */
@@ -118,7 +122,16 @@ input[type="text"] {
   border-radius: 24px;
   margin: 0 auto;
   padding: 0 40px;
+  outline: none;
 }
+
+input[type="text"]:hover {
+  box-shadow: 2px 2px 5px 1px #dfe1e5;
+}
+
+/* input[type="text"]:focus {
+  
+} */
 
 .search-container .fa-search {
   position: absolute;
@@ -161,7 +174,7 @@ input[type="text"] {
   color: #5f6368;
   font-family: arial, sans-serif;
   font-size: 14px;
-  margin: 25px 12px;
+  margin: 25px 9px;
   padding: 6px 16px;
   line-height: 27px;
   height: 36px;
@@ -169,6 +182,11 @@ input[type="text"] {
   text-align: center;
   cursor: pointer;
   user-select: none;
+}
+
+.first-one:hover,
+.second-one:hover {
+  box-shadow: 1px 1px 2px 1px #dfe1e5;
 }
 
 /* === start footer === */
@@ -190,6 +208,11 @@ input[type="text"] {
   color: #787c80;
 }
 
+.footer-container ul li a:hover {
+  border-bottom: 1px solid #787c80;
+  padding-bottom: 2px;
+}
+
 .first-child,
 .second-child {
   padding-top: 5px;
@@ -199,6 +222,6 @@ input[type="text"] {
 .first-child li a,
 .second-child li a {
   display: inline-block;
-  padding: 10px 14px;
+  margin: 10px 14px;
   text-align: center;
 }
